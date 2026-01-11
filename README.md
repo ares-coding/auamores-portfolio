@@ -49,9 +49,6 @@ auamores-portfolio/
 Yu (AuAmores)
 Aspiring Software Developer | AI & Automation Enthusiast
 
-GitHub: https://github.com/ares-coding
-
-Portfolio: https://auamores-portfolio.vercel.app/
 
 ## 📸 Screenshots
 
