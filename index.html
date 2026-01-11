@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Au<span>Amores</span></div>
+        
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- HERO SECTION -->
+<section id="hero">
+    <div class="container hero-wrapper">
+        <div class="hero-content">
+            <h1 class="name"></h1>
+            <p class="hero-intro">
+                Hi, I'm <span>Au Amores</span><br>
+                Software Developer and AI Engineer with hands-on experience in<br>
+                Machine Learning, Mobile and Web Development.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn primary">Download CV</a>
+                <a href="#projects" class="btn secondary">View Projects</a>
+            </div>
+
+           <div class="social-links">
+    <a href="https://github.com/ares-coding" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/au-a-671655315/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    
+    <a href="https://www.instagram.com/tan_amores/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <a href="mailto:auamores3@gmail.com">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
+        </div>
+
+        <div class="hero-image">
+            <div class="image-border">
+                <img src="assets/personal-photo.png" alt="Au Amores Profile">
+            </div>
+        </div>
+    </div>
+</section>
+
+  <script src="background.js"></script>
+  <script src="typing.js"></script>
+
+  </section>
+
+ <!-- SKILLS SECTION -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Technical Expertise</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Machine Learning & AI</h3>
+        <p>
+          CNN, SVM, Hybrid CNN-SVM, Image Processing using Python,
+          TensorFlow, and OpenCV.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <p>
+          HTML, CSS, JavaScript, responsive layouts, and
+          modern portfolio websites.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools & Virtual Assistant</h3>
+        <p>
+          Excel automation, Google Workspace, data handling,
+          research, and task automation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/alcohol-detection.png" alt="Alcohol Detection">
+                </div>
+                <div class="project-info">
+                    <h3>Detecting Alcohol Intoxication</h3>
+                    <div class="algorithm-tags">
+                        <span class="algo-badge">CNN</span>
+                        <span class="algo-badge">SVM</span>
+                        <span class="algo-badge">Hybrid</span>
+                    </div>
+                    <p>AI-based facial image analysis comparing CNN, SVM, and Hybrid models to classify intoxicated vs normal states.</p>
+                    <div class="project-footer">
+                        <div class="project-tech-icons">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fas fa-brain" title="AI/ML"></i>
+                        </div>
+                        <a href="#" class="btn-github">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/url-detection.png" alt="URL Detection">
+                </div>
+                <div class="project-info">
+                    <h3>Malicious URL Detection</h3>
+                    <div class="algorithm-tags">
+                        <span class="algo-badge">Machine Learning</span>
+                    </div>
+                    <p>A system that detects malicious URLs using feature extraction and classification models to improve security.</p>
+                    <div class="project-footer">
+                        <div class="project-tech-icons">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fas fa-shield-alt" title="Cybersecurity"></i>
+                        </div>
+                        <a href="#" class="btn-github">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/sql-injection.png" alt="SQL Injection">
+                </div>
+                <div class="project-info">
+                    <h3>SQL Injection Attack Detection</h3>
+                    <div class="algorithm-tags">
+                        <span class="algo-badge">Pattern Analysis</span>
+                    </div>
+                    <p>Security project that detects SQL injection attacks using ML techniques to protect database integrity.</p>
+                    <div class="project-footer">
+                        <div class="project-tech-icons">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fas fa-database" title="SQL"></i>
+                        </div>
+                        <a href="#" class="btn-github">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/portfolio-preview.png" alt="Portfolio Preview">
+                </div>
+                <div class="project-info">
+                    <h3>Glowing Portfolio Website</h3>
+                    <div class="algorithm-tags">
+                        <span class="algo-badge">Responsive Design</span>
+                    </div>
+                    <p>Modern personal portfolio featuring dark UI, glowing accents, and smooth animations with HTML and CSS.</p>
+                    <div class="project-footer">
+                        <div class="project-tech-icons">
+                            <i class="fab fa-html5" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" title="CSS3"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                        </div>
+                        <a href="#" class="btn-github">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MORE PROJECTS -->
+<div class="more-projects">
+  <h3>More Projects Coming</h3>
+  <p>
+    I’m continuously learning and building new projects.
+    This section will grow over time.
+  </p>
+  <span class="status">In Progress 🚀</span>
+</div>
+
+
+<!-- TOOLS & TECH STACK -->
+<section id="tech-stack" class="tech-stack">
+  <h2 class="section-title">Tech Stacks</h2>
+
+  <div class="tech-grid">
+
+    <!-- Languages & Frameworks -->
+    <div class="tech-box">
+      <h3>Languages & Frameworks</h3>
+      <div class="icon-grid">
+        <div class="tech-icon" data-name="Python">
+          <img src="assets/icons/python.png" alt="Python">
+        </div>
+        <div class="tech-icon" data-name="JavaScript">
+          <img src="assets/icons/javascript.png" alt="JavaScript">
+        </div>
+        <div class="tech-icon" data-name="HTML5">
+          <img src="assets/icons/html.png" alt="HTML">
+        </div>
+        <div class="tech-icon" data-name="CSS3">
+          <img src="assets/icons/css.png" alt="CSS">
+        </div>
+        <div class="tech-icon" data-name="React">
+          <img src="assets/icons/react.png" alt="React">
+        </div>
+        <div class="tech-icon" data-name="Bootstrap">
+          <img src="assets/icons/bootstrap.png" alt="Bootstrap">
+        </div>
+        <div class="tech-icon" data-name="PHP">
+          <img src="assets/icons/php.png" alt="PHP">
+        </div>
+      </div>
+    </div>
+
+    <!-- Machine Learning & AI -->
+    <div class="tech-box">
+      <h3>Machine Learning & AI</h3>
+      <div class="icon-grid">
+        <div class="tech-icon" data-name="TensorFlow">
+          <img src="assets/icons/tensorflow.png" alt="TensorFlow">
+        </div>
+        <div class="tech-icon" data-name="Keras">
+          <img src="assets/icons/keras.png" alt="Keras">
+        </div>
+        <div class="tech-icon" data-name="OpenCV">
+          <img src="assets/icons/opencv.png" alt="OpenCV">
+        </div>
+        <div class="tech-icon" data-name="Scikit-learn">
+          <img src="assets/icons/sklearn.png" alt="Scikit Learn">
+        </div>
+        <div class="tech-icon" data-name="Google Colab">
+          <img src="assets/icons/colab.png" alt="Google Colab">
+        </div>
+        <div class="tech-icon" data-name="CNN">
+       <img src="assets/icons/cnn.png" alt="CNN">
+        </div>
+        <div class="tech-icon" data-name="SVM">
+          <img src="assets/icons/svm.png" alt="SVM">
+        </div>
+      </div>
+    </div>
+
+    <!-- Developer Tools -->
+    <div class="tech-box">
+      <h3>Developer Tools</h3>
+      <div class="icon-grid">
+        <div class="tech-icon" data-name="VS Code">
+          <img src="assets/icons/vscode.png" alt="VS Code">
+        </div>
+        <div class="tech-icon" data-name="Git">
+          <img src="assets/icons/git.png" alt="Git">
+        </div>
+        <div class="tech-icon" data-name="GitHub">
+          <img src="assets/icons/github.png" alt="GitHub">
+        </div>
+        <div class="tech-icon" data-name="Docker">
+          <img src="assets/icons/docker.png" alt="Docker">
+        </div>
+        <div class="tech-icon" data-name="Android Studio">
+          <img src="assets/icons/androidstudio.png" alt="Android Studio">
+        </div>
+        <div class="tech-icon" data-name="Chat GPT">
+          <img src="assets/icons/chatgpt.png" alt="Chat GPT">
+        </div>
+        <div class="tech-icon" data-name="PyCharm">
+          <img src="assets/icons/pycharm.png" alt="PyCharm">
+        </div>
+        <div class="tech-icon" data-name="Figma">
+          <img src="assets/icons/figma.png" alt="Figma">
+        </div>
+        <div class="tech-icon" data-name="Canva">
+          <img src="assets/icons/canva.png" alt="Canva">
+        </div>
+      </div>
+    </div>
+
+  </div><section id="experience" class="experience-section">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+        
+        <div class="timeline">
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 - Present</div>
+                <div class="timeline-content">
+                    <h3>Freelance Software Developer</h3>
+                    <h4>Remote / Project-Based</h4>
+                    <p>Remote / Project-Based
+Working as a remote freelance software developer, focusing on websites and mobile applications. 
+Experienced in system assistance, automation, and technical support. 
+Collaborates with clients on custom solutions, portfolio websites, and prototype-level applications.</p>
+<div class="tools-used">
+  <span class="tool">HTML5</span>
+  <span class="tool">CSS3</span>
+  <span class="tool">JavaScript</span>
+  <span class="tool">Python</span>
+  <span class="tool">Git & GitHub</span>
+  <span class="tool">VS Code</span>
+  <span class="tool">Figma</span>
+</div>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 - 2025</div>
+                <div class="timeline-content">
+                    <h3>Recruitment Officer</h3>
+                    <h4>Honor</h4>
+                    <p>Deployment / Processing Support
+Assisted applicants with documentation, data encoding, and record verification 
+while ensuring accuracy and compliance throughout the recruitment and deployment process.</p>
+<div class="tools-used">
+  <span class="tool">MS Excel</span>
+  <span class="tool">MS Word</span>
+  <span class="tool">Google Sheets</span>
+  <span class="tool">Google Docs</span>
+  <span class="tool">Email Tools</span>
+  <span class="tool">Record Management</span>
+</div>
+                </div>
+            </div>
+            
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021 - Present</div>
+                <div class="timeline-content">
+                    <h3>Online Administrative Assistant</h3>
+                    <h4>Freelance</h4>
+                    <p>Processed 200+ client transactions with 98% accuracy, Managed government 
+                      service appointments and documentation,Reduced client waiting time by up to 90%,
+                       Handled email, scheduling, and record management</p>
+                       <div class="tools-used">
+  <span class="tool">Gmail</span>
+  <span class="tool">Google Calendar</span>
+  <span class="tool">Google Drive</span>
+  <span class="tool">Data Entry Systems</span>
+  <span class="tool">File Management</span>
+  <span class="tool">Client Records</span>
+</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-card">
+      <p>
+        I’m a Computer Science graduate specializing in machine learning, 
+        image processing, and automation. I build efficient, real-world 
+        solutions by combining strong technical foundations with modern tools 
+        and continuous self-study.
+      </p>
+
+      <p>
+        My work involves developing ML models, designing responsive web applications, 
+        and automating workflows to enhance productivity, reliability, and system performance.
+      </p>
+    </div>
+
+  </div>
+</section>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+            <div class="contact-card-container">
+                <a href="mailto:auamores3@gmail.com" class="contact-glow-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Me</h3>
+                    <p>auamores3@gmail.com</p>
+                </a>
+                <a href="https://www.instagram.com/tan_amores/" target="_blank" class="contact-glow-card">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Connect with me</p>
+                </a>
+            </div>
+            <div class="contact-cta">
+                <a href="https://www.instagram.com/tan_amores/" class="btn-main-contact">Send a Message</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="text-align: center; padding: 40px; color: #555; font-size: 0.9rem;">
+    <p>&copy; 2026 Au Amores. All rights reserved.</p>
+</footer>
+
+</body> 
