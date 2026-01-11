@@ -46,6 +46,18 @@ GitHub: https://github.com/ares-coding
 
 Portfolio: https://auamores-portfolio.vercel.app/
 
+## 📸 Screenshots
+
+### 🏠 Home
+![Home](./assets/screenshots/home.png)
+
+### 🧠 Projects
+![Projects](./assets/screenshots/projects.png)
+
+### 👤 About
+![About](./assets/screenshots/about.png)
+
+
 📄 License
 
 This project is licensed under the MIT License.
