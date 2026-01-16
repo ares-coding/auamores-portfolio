@@ -2421,82 +2421,82 @@ html {
     }
 
     .skill-card {
-        /* Siguraduhin na hindi ito lalapad sa screen */
+        
         width: 100% !important; 
         max-width: 100% !important;
-        display: block !important; /* Force block behavior */
+        display: block !important; 
         margin-bottom: 15px !important;
         box-sizing: border-box !important;
     }
 }
-/* --- FORCE VERTICAL STACK --- */
+
 @media (max-width: 768px) {
-    /* 1. Reset ang Grid: Sa halip na magkatabi, magiging magkakapatong */
+    
     .skills-grid {
-        display: block !important; /* Tinatanggal ang grid behavior */
+        display: block !important; 
         width: 100% !important;
         padding: 0 10px !important;
     }
 
-    /* 2. Gawing Block ang bawat Card para kumuha ng buong linya */
+    
     .skill-card {
         display: block !important;
         width: 100% !important;
-        margin-bottom: 20px !important; /* Space sa pagitan ng mga cards */
+        margin-bottom: 20px !important; 
         box-sizing: border-box !important;
     }
 }
-/* --- FINAL TECH STACK MOBILE FIX --- */
+
 @media screen and (max-width: 768px) {
-    /* I-target ang Technical Expertise grid */
+   
     .tech-grid {
         display: flex !important;
-        flex-direction: column !important; /* Gawing patayo */
+        flex-direction: column !important; 
         align-items: center !important;
         gap: 25px !important;
         width: 100% !important;
         margin-top: 30px !important;
     }
 
-    /* Siguraduhin na ang bawat box (Languages, ML, Tools) ay sakto sa screen */
+    
     .tech-box {
         max-width: 100% !important;
-        width: 90% !important; /* May konting gap sa gilid */
+        width: 90% !important; 
         padding: 20px !important;
     }
 
-    /* I-adjust ang icons sa loob para hindi mag-overflow */
+
     .icon-grid {
         grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)) !important;
         width: 100% !important;
         gap: 10px !important;
     }
 }
-/* Bawasan ang padding sa pagitan ng mga sections */
+
 section {
-  padding: 60px 0 !important; /* Dati ay posibleng 80px o 100px ito */
+  padding: 60px 0 !important; 
 }
 
-/* Partikular na idikit ang Projects sa section na nasa taas nito */
+
 .projects-section {
-  padding-top: 20px !important; /* Mas maliit na gap sa itaas */
+  padding-top: 20px !important; 
 }
 
 .section-title {
-  margin-bottom: 30px !important; /* Bawasan din ang gap sa ilalim ng mismong title */
+  margin-bottom: 30px !important; 
 }
 .tech-grid {
   margin-top: 40px;
-  margin-bottom: 20px; /* Mas maliit na margin sa ilalim */
+  margin-bottom: 20px; 
 }
-/* --- GLASSMORPHISM PARA SA BACKGROUND NG ICONS --- */
 
-/* Ito ang tina-target ang bawat box ng icon (halimbawa: Python box) */
+
+
 .icon-grid div, .tech-stack-item {
-    background: rgba(17, 24, 39, 0.6) !important; /* Dark blue transparent base */
-    backdrop-filter: blur(12px) !important; /* Glass blur effect */
+    background: rgba(17, 24, 39, 0.6) !important; 
+    backdrop-filter: blur(12px) !important; 
     -webkit-backdrop-filter: blur(12px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important; /* Glass edge highlight */
+    border: 1px solid rgba(255, 255, 255, 0.08) !important; 
     border-radius: 12px !important;
     padding: 20px !important;
     display: flex !important;
@@ -2507,52 +2507,51 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Hover effect para sa Glass Boxes */
 .icon-grid div:hover, .tech-stack-item:hover {
-    background: rgba(34, 197, 94, 0.1) !important; /* Greenish glow background */
-    border-color: #22C55E !important; /* Green glowing border */
+    background: rgba(34, 197, 94, 0.1) !important; 
+    border-color: #22C55E !important; 
     transform: translateY(-5px) !important;
     box-shadow: 0 8px 25px rgba(34, 197, 94, 0.2) !important;
 }
 
-/* Panatilihin ang original style ng icons sa loob */
+
 .icon-grid i, .tech-stack-item i {
     font-size: 2.5rem !important;
     margin-bottom: 10px !important;
-    /* Hindi na natin babaguhin ang kulay dito para stay as is */
+    
 }
 
-/* Style para sa pangalan ng tech sa ilalim */
+
 .icon-grid span, .tech-stack-item span {
     font-size: 0.85rem !important;
     font-weight: 500 !important;
     color: #E5E7EB !important;
 }
-/* --- TECH STACKS UNIFIED GLASS DESIGN --- */
 
-/* 1. Gawing Glass Card ang tatlong main containers */
+
+
 .tech-box {
-    background: rgba(17, 24, 39, 0.4) !important; /* Transparent Dark Blue */
-    backdrop-filter: blur(12px) !important; /* Glass effect */
+    background: rgba(17, 24, 39, 0.4) !important; 
+    backdrop-filter: blur(12px) !important; 
     -webkit-backdrop-filter: blur(12px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important; /* Thin glass edge */
+    border: 1px solid rgba(255, 255, 255, 0.08) !important; 
     border-radius: 16px !important;
     padding: 30px !important;
     transition: all 0.4s ease !important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* 2. Neon Green Titles (Languages, ML, Tools) */
+
 .tech-box h3 {
-    color: #22C55E !important; /* Neon Green */
+    color: #22C55E !important; 
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
     font-size: 1.1rem !important;
     margin-bottom: 25px !important;
-    text-shadow: 0 0 10px rgba(34, 197, 94, 0.3) !important; /* Neon glow */
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.3) !important; 
 }
 
-/* 3. Hover Effect: Para mas mag-glow ang glass */
+
 .tech-box:hover {
     border-color: rgba(34, 197, 94, 0.5) !important;
     background: rgba(17, 24, 39, 0.6) !important;
@@ -2560,47 +2559,47 @@ section {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
 }
 
-/* 4. Glass effect din para sa maliliit na icon boxes sa loob (Opsyonal) */
+
 .icon-grid div {
     background: rgba(255, 255, 255, 0.03) !important;
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
     border-radius: 8px !important;
     padding: 12px !important;
 }
-/* --- EXPERIENCE SECTION (TIMELINE GLASS) --- */
+
 
 .experience-section {
-    padding: 20px 0 60px 0; /* Dikit sa taas */
+    padding: 20px 0 60px 0; 
     position: relative;
 }
 
-/* Ang Linyang Neon Green sa Kaliwa */
+
 .timeline {
-    border-left: 2px solid rgba(34, 197, 94, 0.3); /* Green line na medyo faded */
+    border-left: 2px solid rgba(34, 197, 94, 0.3); 
     margin-left: 10px;
     padding-left: 30px;
     position: relative;
 }
 
-/* Individual Item Wrapper */
+
 .timeline-item {
     margin-bottom: 40px;
     position: relative;
 }
 
-/* Neon Green Dot sa Linya */
+
 .timeline-dot {
     position: absolute;
-    left: -36px; /* Para umakma sa border-left */
+    left: -36px; 
     top: 5px;
     width: 12px;
     height: 12px;
     background: #22C55E;
     border-radius: 50%;
-    box-shadow: 0 0 10px #22C55E; /* Neon glow */
+    box-shadow: 0 0 10px #22C55E; 
 }
 
-/* Petsa sa taas ng card */
+
 .timeline-date {
     color: #22C55E;
     font-size: 0.9rem;
@@ -2613,10 +2612,10 @@ section {
     border: 1px solid rgba(34, 197, 94, 0.2);
 }
 
-/* THE ULTRA TRANSPARENT GLASS CARD (Kopyang-kopya sa Tech Stack) */
+
 .timeline-content {
-    background: rgba(17, 24, 39, 0.1); /* Super transparent */
-    backdrop-filter: blur(15px); /* Strong blur para kita particles pero readable */
+    background: rgba(17, 24, 39, 0.1); 
+    backdrop-filter: blur(15px); 
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -2627,12 +2626,12 @@ section {
 
 /* Hover Effect */
 .timeline-content:hover {
-    background: rgba(34, 197, 94, 0.05); /* Green tint pag hover */
+    background: rgba(34, 197, 94, 0.05); 
     border-color: rgba(34, 197, 94, 0.4);
-    transform: translateX(10px); /* Gagalaw pakanan */
+    transform: translateX(10px); 
 }
 
-/* Typography sa loob ng card */
+
 .timeline-content h3 {
     color: #F3F4F6;
     font-size: 1.2rem;
@@ -2640,7 +2639,7 @@ section {
 }
 
 .timeline-content h4 {
-    color: #9CA3AF; /* Grayish sub-text */
+    color: #9CA3AF; 
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 15px;
@@ -2652,7 +2651,7 @@ section {
     line-height: 1.6;
 }
 #about {
-    margin-top: -40px !important; /* Negative margin para hatakin paitaas ang section */
+    margin-top: -40px !important; 
     position: relative;
     z-index: 10;
 }
@@ -2686,60 +2685,58 @@ section {
 .primary-btn {
   box-shadow: 0 0 12px rgba(0,255,156,0.4);
 }
-/* --- COMPACT PROJECT CARDS --- */
 
-/* 1. Paliitin ang mismong card padding */
+
+
 .project-card {
-    padding: 15px !important; /* Mula sa malaking padding, ginawa nating 15px */
+    padding: 15px !important; 
     border-radius: 12px !important;
     background: rgba(17, 24, 39, 0.4) !important;
     margin-bottom: 20px !important;
 }
 
-/* 2. Paliitin ang image container para hindi kainin ang buong card */
+
 .project-image {
-    height: 180px !important; /* Binawasan ang height ng image */
+    height: 180px !important; 
     border-radius: 8px !important;
     margin-bottom: 12px !important;
     overflow: hidden;
 }
 
-/* 3. I-adjust ang text sa loob para hindi kalat */
 .project-content h3 {
-    font-size: 1.1rem !important; /* Mas maliit na title */
+    font-size: 1.1rem !important; 
     margin-bottom: 6px !important;
 }
 
 .project-content p {
-    font-size: 0.85rem !important; /* Mas maliit na description */
+    font-size: 0.85rem !important; 
     line-height: 1.4 !important;
     margin-bottom: 12px !important;
 }
 
-/* 4. Paliitin ang mga Tech Tags (yung mga buttons sa loob) */
+
 .project-tags span {
     font-size: 0.75rem !important;
     padding: 3px 8px !important;
     margin-right: 5px !important;
 }
 
-/* 5. Gawing 3 columns para mas fit sa screen kung desktop */
+
 .projects-grid {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
-    gap: 15px !important; /* Mas maliit na agwat sa pagitan ng cards */
+    gap: 15px !important; 
 }
-/* --- ABOUT ME GLASS EFFECT OVERRIDE --- */
 
 .about-section {
-    padding-top: 20px !important; /* Keep nating naka-angat gaya ng gusto mo */
+    padding-top: 20px !important; 
     padding-bottom: 60px !important;
     margin-top: -20px !important;
 }
 
-/* Ang mismong container ng text */
+
 .about-content, .about-card { 
-    background: rgba(17, 24, 39, 0.1) !important; /* Halos transparent para kita particles */
+    background: rgba(17, 24, 39, 0.1) !important; 
     backdrop-filter: blur(15px) !important;
     -webkit-backdrop-filter: blur(15px) !important;
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
@@ -2751,13 +2748,13 @@ section {
     transition: transform 0.3s ease !important;
 }
 
-/* Hover effect para buhay tingnan */
+
 .about-content:hover, .about-card:hover {
     border-color: rgba(34, 197, 94, 0.3) !important;
     transform: translateY(-5px) !important;
 }
 
-/* Siguraduhin na litaw ang text sa loob ng glass */
+
 .about-content p, .about-card p {
     color: #f3f4f6 !important;
     font-size: 1.05rem !important;
