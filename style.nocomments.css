@@ -2782,3 +2782,42 @@ section {
   transform: translateY(-2px);
   box-shadow: 0 0 15px rgba(34, 197, 94, 0.6);
 }
+
+.github-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #000;
+  background: #1DB954;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-github {
+  background: transparent;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+}
+
+.btn-github:hover {
+  background: rgba(34,197,94,0.15);
+}
+
+.btn-demo {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #0b0f0e;
+}
+.project-card:hover .btn-github,
+.project-card:hover .btn-demo {
+  transform: translateY(-1px);
+}
+.project-footer {
+  gap: 10px; /* or 12px */
+}
+.btn-github,
+.btn-demo {
+  cursor: pointer;
+}
+
