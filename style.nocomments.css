@@ -2814,10 +2814,192 @@ section {
   transform: translateY(-1px);
 }
 .project-footer {
-  gap: 10px; /* or 12px */
+  gap: 10px; 
 }
 .btn-github,
 .btn-demo {
   cursor: pointer;
 }
+.focus-section {
+  padding: 60px 0;
+  color: #eaeaea;
+}
 
+.focus-section h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.focus-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #1f1f1f;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card h3 {
+  color: #00ff9c;
+  margin-bottom: 10px;
+}
+
+.card p {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.card:hover {
+  border-color: #00ff9c;
+}
+
+.card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-cloud span {
+  border: 1px solid #00ff9c;
+  padding: 6px 14px;
+  font-weight: 600;
+}
+
+.xl { font-size: 22px; }
+.lg { font-size: 18px; }
+.md { font-size: 15px; }
+.sm { font-size: 13px; opacity: 0.8; }
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.skill-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.skill-track {
+  display: flex;
+  width: fit-content;
+  animation: marquee var(--duration, 25s) linear infinite;
+  will-change: transform;
+}
+
+.skill-set {
+  display: flex;
+}
+
+.skill-set span {
+  flex-shrink: 0;
+  margin-right: 16px;
+  padding: 6px 14px;
+  border: 1px solid #00ff9c;
+  color: #00ff9c;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0,0,0);
+  }
+  to {
+    transform: translate3d(calc(-1 * var(--marquee-width)),0,0);
+  }
+}
+
+
+.marquee-container {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3); 
+  padding: 25px 0;
+  white-space: nowrap;
+  border-top: 1px solid rgba(46, 204, 113, 0.2);
+  border-bottom: 1px solid rgba(46, 204, 113, 0.2);
+  margin-bottom: 50px;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite; 
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  font-family: 'Inter', sans-serif; 
+  color: #a0aec0; 
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.marquee-item strong {
+  color: #2ecc71; 
+  background: rgba(46, 204, 113, 0.1); 
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+
+
+#skills .section-title, 
+#projects .section-title {
+    text-align: center !important;
+    width: 100%;
+    margin-bottom: 50px !important;
+}
+
+
+.skills-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    gap: 30px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important; 
+    padding: 0 20px !important;
+}
+
+
+.projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+    gap: 40px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important; 
+    padding: 0 20px !important;
+}
+
+
+.skill-card, .project-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}

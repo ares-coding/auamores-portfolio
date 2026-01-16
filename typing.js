@@ -25,3 +25,4 @@ if (menuIcon && navLinks) {
         icon.classList.toggle('fa-times');
     });
 }
+
