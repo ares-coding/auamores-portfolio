@@ -3003,3 +3003,34 @@ section {
     flex-direction: column !important;
     height: 100% !important;
 }
+
+.marquee-intro {
+  text-align: center;
+  margin-top: -20px;   
+  margin-bottom: 32px;
+}
+
+
+.marquee-intro span {
+  font-size: 0.95rem;          
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(124, 255, 178, 0.6);
+}
+
+
+
+.marquee-intro span::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(124, 255, 178, 0.6),
+    transparent
+  );
+  margin: 12px auto 0;
+}
