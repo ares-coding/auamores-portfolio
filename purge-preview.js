@@ -7,7 +7,7 @@ const { PurgeCSS } = require("purgecss");
       "./**/*.js"
     ],
     css: ["./style.nocomments.css"],
-    rejected: true, // PREVIEW ONLY
+    rejected: true, 
   });
 
   console.log("===== UNUSED SELECTORS =====");
