@@ -3103,3 +3103,32 @@ section {
   text-shadow: 0 0 12px rgba(34,197,94,0.8);
 }
 
+.project-footer .tech-used i {
+  color: #23c947; 
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+.project-footer .tech-used i:hover {
+  opacity: 1;
+  text-shadow: 
+    0 0 6px rgba(0, 255, 156, 0.8),
+    0 0 14px rgba(0, 255, 156, 0.6);
+  transform: translateY(-2px);
+}
+.tech-badge {
+  box-shadow: 0 0 6px rgba(124,255,0,0.4);
+}
+.project-tech-icons {
+  margin-top: 18px;
+}
+.project-tech-icons {
+  display: flex;
+  flex-wrap: wrap;       
+  gap: 12px;
+  justify-content: flex-start;
+}
+.project-links {
+  display: flex;
+  gap: 14px;
+}
+
