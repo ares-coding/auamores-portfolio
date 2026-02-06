@@ -356,7 +356,6 @@ body {
     transform: translateY(0);
   }
 }
- ===== HERO SOCIAL ICONS (NEON GREEN) ===== */
 
 .hero-socials {
   display: flex;
@@ -1935,6 +1934,7 @@ body {
     line-height: 1.4;
     display: -webkit-box;
     -webkit-line-clamp: 3; 
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -1974,6 +1974,7 @@ body {
     
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -3137,3 +3138,70 @@ section {
   }
 }
 
+/* FIX PROJECTS TECH USED */
+.tech-used {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.tech-used i {
+  font-size: 28px;
+  color: #00ff9c;
+  line-height: 1;
+}
+
+.tech-used i:hover {
+  transform: scale(1.15);
+  transition: 0.25s ease;
+}
+
+/* PROJECTS TECH STACKS EFFECTS */
+.tech-icons img {
+  width: 45px;
+  height: 45px;
+  padding: 6px;
+  border-radius: 10px;
+  background: rgba(0, 255, 156, 0.08);
+  border: 1px solid rgba(0, 255, 156, 0.35);
+  box-shadow: 0 0 10px rgba(0, 255, 156, 0.25);
+  transition: all 0.3s ease;
+}
+
+.tech-icons img:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 0 22px rgba(0, 255, 156, 0.5);
+}
+
+/* FIX MOBILE VIEW PROJECTS ICONS, LIVE DEMO */
+.tech-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: nowrap;  
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .project-footer {
+    flex-direction: column;   
+    align-items: flex-start;
+  }
+
+  .tech-icons {
+    flex-direction: row;      
+    margin-bottom: 10px;
+  }
+
+  .project-links {
+    display: flex;
+    gap: 10px;
+  }
+}
