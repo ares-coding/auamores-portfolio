@@ -3205,3 +3205,36 @@ section {
     gap: 10px;
   }
 }
+
+/* Projects alignment */
+.project-image {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.projects-grid {
+  align-items: stretch;
+}
+
+/* PROJECTS IMAGES  */
+.project-image {
+  width: 100%;
+  height: 230px;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
