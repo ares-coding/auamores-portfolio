@@ -3286,5 +3286,208 @@ section {
 }
 
 #contact {
-  padding-bottom: 60px; /* from maybe 100px */
+  padding-bottom: 60px; 
+}
+
+/* PROJECT TITLE POLISH */
+/* ===== PROJECT CARD COMPACT STYLES ===== */
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Project Card Container */
+.project-card {
+  background: rgba(0, 20, 20, 0.6);
+  border: 1px solid rgba(0, 255, 135, 0.2);
+  border-radius: 12px;
+  padding: 0 !important;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 255, 135, 0.4);
+}
+
+/* Project Image Section */
+.project-image {
+  position: relative;
+  width: 100%;
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+/* Title Overlay - GREEN */
+.project-title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 60%, transparent 100%);
+  padding: 3rem 1.2rem 0.8rem 1.2rem !important;
+  pointer-events: none;
+}
+
+.project-title-overlay h3 {
+  color: #00ff87 !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Project Info Section - COMPACT */
+.project-info {
+  padding: 1rem 1.2rem !important;
+}
+
+/* Algorithm Tags */
+.algorithm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem !important;
+}
+
+.algo-badge {
+  background: transparent !important;
+  border: 1px solid #00ff87 !important;
+  color: #00ff87 !important;
+  padding: 0.35rem 0.9rem !important;
+  border-radius: 20px !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  display: inline-block;
+}
+
+/* Description Text */
+.project-info p {
+  color: #c0c0c0 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+/* Project Footer - COMPACT */
+.project-footer {
+  padding: 0.8rem 1.2rem 1.2rem 1.2rem !important;
+}
+
+/* Tech Icons */
+.tech-icons {
+  display: flex;
+  gap: 0.6rem !important;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem !important;
+}
+
+.tech-icons img {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 6px !important;
+  background: rgba(0, 255, 135, 0.1) !important;
+  padding: 0.3rem !important;
+  transition: transform 0.3s ease;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  gap: 0.8rem !important;
+  flex-wrap: wrap;
+}
+
+.btn-github,
+.btn-demo {
+  padding: 0.5rem 1.3rem !important;
+  border: 1px solid #00ff87 !important;
+  background: transparent !important;
+  color: #00ff87 !important;
+  border-radius: 25px !important;
+  text-decoration: none !important;
+  font-size: 0.85rem !important;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-github:hover,
+.btn-demo:hover {
+  background: rgba(0, 255, 135, 0.1) !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .project-title-overlay h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .project-info p {
+    font-size: 0.85rem !important;
+  }
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+/* PROJECTS THUMBNAIL IMAGES ZOOM EFFECTS */
+.project-image {
+  overflow: hidden; 
+}
+
+.project-image img {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1); 
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between; /* Nilalayo ang icons sa buttons */
+  align-items: center;
+  margin-top: auto; /* Itinutulak ang footer sa pinaka-ibaba ng card */
+  padding-top: 1rem;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 10px; /* Space sa pagitan ng maliliit na icons */
+}
+
+.project-links {
+  display: flex;
+  gap: 10px; /* Space kung sakaling dalawa ang buttons (Demo at GitHub) */
 }
