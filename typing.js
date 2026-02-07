@@ -5,7 +5,7 @@ let index = 0;
 function typeWriter() {
     const element = document.querySelector(".name");
     if (element && index < titleText.length) {
-        element.innerHTML += titleText.charAt(index);
+        element.textContent += titleText.charAt(index);
         index++;
         setTimeout(typeWriter, speed);
     }
@@ -25,4 +25,3 @@ if (menuIcon && navLinks) {
         icon.classList.toggle('fa-times');
     });
 }
-
