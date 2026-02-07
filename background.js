@@ -5,7 +5,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particles = [];
-const count = 80;
+const count = 70;
 
 class Particle {
   constructor() {
@@ -64,8 +64,12 @@ for (let i = 0; i < count; i++) {
 }
 animate();
 
-window.addEventListener("resize", () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-});
+function resizeCanvas() {
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = window.innerWidth * dpr;
+  canvas.height = window.innerHeight * dpr;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
 
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
