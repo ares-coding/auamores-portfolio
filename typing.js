@@ -25,3 +25,20 @@ if (menuIcon && navLinks) {
         icon.classList.toggle('fa-times');
     });
 }
+// Back to Top Button Logic
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTopBtn = document.getElementById("backToTop");
+
+  if (!backToTopBtn) return;
+
+  backToTopBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // smooth scroll
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // fallback (in case may custom scroll behavior)
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  });
+});
