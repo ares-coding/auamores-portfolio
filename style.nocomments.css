@@ -3284,3 +3284,7 @@ section {
   font-size: 12px;
   opacity: 0.5;
 }
+
+#contact {
+  padding-bottom: 60px; /* from maybe 100px */
+}
