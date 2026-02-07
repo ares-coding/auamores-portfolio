@@ -3476,18 +3476,69 @@ section {
 
 .project-footer {
   display: flex;
-  justify-content: space-between; /* Nilalayo ang icons sa buttons */
+  justify-content: space-between; 
   align-items: center;
-  margin-top: auto; /* Itinutulak ang footer sa pinaka-ibaba ng card */
+  margin-top: auto; 
   padding-top: 1rem;
 }
 
 .tech-icons {
   display: flex;
-  gap: 10px; /* Space sa pagitan ng maliliit na icons */
+  gap: 10px; 
 }
 
 .project-links {
   display: flex;
-  gap: 10px; /* Space kung sakaling dalawa ang buttons (Demo at GitHub) */
+  gap: 10px; 
+}
+
+/* =========================
+   CORE DOMAINS MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  .core-domains,
+  .core-domains * {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .core-domains-title,
+  .core-domains h2,
+  .core-domains-heading {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 0 12px;
+    white-space: normal;
+  }
+
+}
+
+/* =========================
+   FORCE COMPACT MORE PROJECTS CARD
+========================= */
+
+.more-projects-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.more-projects-card {
+  width: auto !important;
+  max-width: 520px;   /* desktop size */
+  min-width: 0;
+  padding: 28px 24px;
+}
+@media (max-width: 768px) {
+
+  .more-projects-card {
+    max-width: 300px;  /* compact talaga */
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+
 }
