@@ -1,4 +1,4 @@
-const titleText = "Building Intelligent Digital Solutions That Matter";
+const titleText = "Building AI-Driven Detection Systems That Solve Real Problems";
 const speed = 100; 
 let index = 0;
 
